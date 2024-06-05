@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Facebook.com ni Ron Jerwin</title>
+</head>
+<body>
+  <div class="facebook">
+    <div class="facebook-logo-text">
+      <div>
+        <img class="facebook-logo" src="facebook.svg">
+      </div>
+      <div>
+        <p class="facebook-text">Connect with friends and the world around you on Facebook.</p>
+      </div>
+    </div>
+    <div class="login-section">
+    <div class="log-in-section">
+      <div>
+        <input class="email" type="text" placeholder="Email or phone number">
+      </div>
+      <div>
+        <input class="password" type="password" placeholder="Password">
+      </div>
+      <div>
+        <button id="login-btn" class="login-btn">Log In</button>
+        <div id="popupDialog"></div>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" class="forgot-password">Forgot password?</a>
+      </div>
+      <div class="blank-line">
+
+      </div>
+      <div>
+        <button class="create-new-account"><a href="https://www.facebook.com/r.php">Create new account</a></button>
+      </div>
+    </div>
+    <div class="page">
+      <p class="create-page"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, brand or business.
+      </p>
+    </div>
+  </div>
+  </div>
+<script>
+  const loginBtn = document.getElementById("login-btn");
+  const popupDialog = document.getElementById("popupDialog");
+
+  loginBtn.addEventListener("click", () => {
+    popupDialog.style.display = "block";
+    popupDialog.innerHTML = `
+      <div class="content">
+        <h2>HAHA NA HACK KA NI RJ!</h2>
+        <p>Joke lang sinigang</p>
+        <p>Facebook clone lang to, nag test code lang ako hehe:).</p>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
